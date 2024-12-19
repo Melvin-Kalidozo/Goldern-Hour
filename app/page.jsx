@@ -13,7 +13,7 @@ export default function Home() {
     <div className=" ">
       <div className=" flex p-5 justify-center items-center flex-col space-y-4">
         <h1 className="text-center text-[2.5rem] font-extrabold leading-snug">
-          Golden Hours, Timeless{" "}
+          Golden Hours Timeless{" "}
           <span className="relative">
             Memories
             <svg
