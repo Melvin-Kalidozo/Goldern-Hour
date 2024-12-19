@@ -10,8 +10,8 @@ import Footer from "../@/components/footer/Footer";
 
 export default function Home() {
   return (
-    <div className=" ">
-      <div className=" flex p-5 justify-center items-center flex-col space-y-4">
+    <div className="">
+      <div className="relative flex p-5 justify-center items-center flex-col space-y-4">
         <h1 className="text-center text-[2.5rem] font-extrabold leading-snug">
           Golden Hours Timeless{" "}
           <span className="relative">
@@ -35,20 +35,76 @@ export default function Home() {
             </svg>
           </span>{" "}
         </h1>
-        <p className=" font-extralight ">
+
+        {/* Multiple Gradient Oval Backdrops with Shades of Gold and More Faded Opacity */}
+        <div
+          className="absolute w-[250px] h-[350px] md:w-[400px] md:h-[600px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-40 rounded-full blur-lg"
+          style={{
+            top: "100%",
+            left: "10%",
+            zIndex: -1,
+          }}
+        ></div>
+
+        <div
+          className="absolute w-[200px] h-[300px] md:w-[350px] md:h-[500px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-30 rounded-full blur-lg"
+          style={{
+            top: "50%",
+            right: "0%",
+            zIndex: -1,
+          }}
+        ></div>
+
+        <div
+          className="absolute w-[150px] h-[250px] md:w-[300px] md:h-[400px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-20 rounded-full blur-lg"
+          style={{
+            top: "75%",
+            left: "25%",
+            zIndex: -1,
+          }}
+        ></div>
+
+        <p className="font-extralight">
           "The Perfect Light for Your Perfect Shot"
         </p>
       </div>
+
       <div className="">
         <Carousel />
       </div>
 
-      <div className=" h-[100vh] flex justify-center items-center">
+      <div className="h-[100vh] flex justify-center relative items-center">
+        <div
+          className="absolute w-[250px] h-[350px] md:w-[400px] md:h-[600px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-80 rounded-full blur-sm"
+          style={{
+            top: "100%",
+            right: "10%",
+            zIndex: -1,
+          }}
+        ></div>
         <AboutUs />
       </div>
 
-      <div>
+      <div className="relative">
         <HorizontalCarousel />
+
+        <div
+          className="rounded-[3em] absolute w-[250px] h-[250px] md:w-[400px] md:h-[400px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-50"
+          style={{
+            top: "15%",
+            left: "10%",
+            zIndex: -1,
+          }}
+        ></div>
+
+        <div
+          className=" rounded-[3em] absolute w-[200px] h-[200px] md:w-[350px] md:h-[350px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-50"
+          style={{
+            top: "50%",
+            right: "5%",
+            zIndex: -1,
+          }}
+        ></div>
       </div>
 
       <div>
