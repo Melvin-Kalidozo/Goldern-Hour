@@ -74,14 +74,16 @@ export default function Home() {
       </div>
 
       <div className="h-[100vh] flex justify-center relative items-center">
+        {/* Ellipse with Soft Edges */}
         <div
-          className="absolute w-[250px] h-[350px] md:w-[400px] md:h-[600px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-80 rounded-full blur-sm"
+          className="absolute w-[300px] h-[250px] md:w-[500px] md:h-[350px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-50 rounded-full blur-lg"
           style={{
-            top: "100%",
+            top: "80%",
             right: "10%",
             zIndex: -1,
           }}
         ></div>
+
         <AboutUs />
       </div>
 
@@ -89,7 +91,7 @@ export default function Home() {
         <HorizontalCarousel />
 
         <div
-          className="rounded-[3em] absolute w-[250px] h-[250px] md:w-[400px] md:h-[400px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-50"
+          className="rounded-[3em] absolute w-[250px] h-[250px] md:w-[400px] md:h-[400px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-50  blur-lg"
           style={{
             top: "15%",
             left: "10%",
@@ -98,7 +100,7 @@ export default function Home() {
         ></div>
 
         <div
-          className=" rounded-[3em] absolute w-[200px] h-[200px] md:w-[350px] md:h-[350px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-50"
+          className=" rounded-[3em] absolute w-[200px] h-[200px] md:w-[350px] md:h-[350px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-50  blur-lg"
           style={{
             top: "50%",
             right: "5%",
