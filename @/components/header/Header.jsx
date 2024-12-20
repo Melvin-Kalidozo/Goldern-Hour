@@ -18,7 +18,7 @@ export default function Header() {
 
           <li>
             <Link
-              href="/about"
+              href="/about-us"
               className="hover:text-[#FFCC00] transition-colors"
             >
               About
