@@ -13,7 +13,7 @@ export default function AboutUsHeader() {
       }}
     >
       <div className="absolute inset-0 bg-black dark:opacity-50 opacity-10"></div>
-      <h1 className=" text-[3rem] font-extrabold">About Us</h1>
+      <h1 className=" text-[3rem] font-extrabold text-white">About Us</h1>
     </div>
   );
 }
