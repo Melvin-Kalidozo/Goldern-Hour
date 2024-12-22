@@ -32,11 +32,11 @@ export default function Header() {
               Contact
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/" className="hover:text-[#FFCC00] transition-colors">
               Pricing
             </Link>
-          </li>
+          </li> */}
         </ul>
         <div>
           <ModeToggle />
