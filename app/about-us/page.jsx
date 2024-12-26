@@ -79,7 +79,7 @@ const ShuffleGrid = React.memo(() => {
     let shuffleCount = 0;
 
     const shuffleImages = () => {
-      if (shuffleCount < 2) {
+      if (shuffleCount < 1) {
         setShuffledData((prev) => shuffle([...prev]));
         shuffleCount++;
       } else {
@@ -87,7 +87,7 @@ const ShuffleGrid = React.memo(() => {
       }
     };
 
-    const interval = setInterval(shuffleImages, 3000); // Shuffle every 3 seconds
+    const interval = setInterval(shuffleImages, 1000); // Shuffle every 3 seconds
 
     return () => clearInterval(interval); // Clean up on component unmount
   }, []);
@@ -158,7 +158,7 @@ export default function AboutUs() {
       </div>
 
       {/* More About Us Section */}
-      <div>
+      <div className=" flex justify-center items-center min-h-[50vh]">
         <MoreAboutUs />
       </div>
     </div>

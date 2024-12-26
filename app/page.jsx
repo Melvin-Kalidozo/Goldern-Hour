@@ -116,9 +116,6 @@ export default function Home() {
       <div>
         <BookSection />
       </div>
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 }

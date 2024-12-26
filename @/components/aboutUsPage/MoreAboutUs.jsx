@@ -2,13 +2,23 @@ import React from "react";
 
 export default function MoreAboutUs() {
   return (
-    <div className=" flex justify-between">
-      <div className=" w-[49%]">
-        <h2 className="text-3xl font-bold">Locations</h2>
-        <p className="mt-2 text-lg">
-          Zomba and Blantyre, but we travel to clients too.
-        </p>
+    <div className=" w-[80%] m-auto flex justify-between">
+      <div className="w-[49%] flex justify-between">
+        <div className="w-[49%] m-5 p-2 bg-[#E2E7D1] dark:bg-[#18181b] flex  justify-center items-center flex-col">
+          <div>
+            <h2 className="text-3xl font-bold">Locations</h2>
+            <p className="mt-2 text-lg">Zomba and Blantyre</p>
+          </div>
+        </div>
+        <div className="w-[49%] m-5 p-2 bg-[#E2E7D1] dark:bg-[#18181b] flex justify-center items-center flex-col">
+          <div>
+            <p className="mt-2 text-lg text-center">
+              We travel to the required location if needed.
+            </p>
+          </div>
+        </div>
       </div>
+
       <div
         className="w-[49%] relative bg-cover bg-center flex items-center justify-center h-[30vh]"
         style={{
@@ -18,9 +28,7 @@ export default function MoreAboutUs() {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      >
-        2
-      </div>
+      ></div>
     </div>
   );
 }

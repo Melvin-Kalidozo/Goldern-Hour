@@ -36,7 +36,7 @@ export default function StatAboutUs() {
 
   return (
     <div className="w-[40%] m-auto flex justify-between">
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center p-3">
         <motion.h1
           className="font-extrabold text-[4rem]"
           initial={{ opacity: 0 }}
@@ -54,7 +54,7 @@ export default function StatAboutUs() {
         </motion.h1>
         <p>Portraits</p>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center p-3">
         <motion.h1
           className="font-extrabold text-[4rem]"
           initial={{ opacity: 0 }}
@@ -72,7 +72,7 @@ export default function StatAboutUs() {
         </motion.h1>
         <p>Portraits</p>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center p-3">
         <motion.h1
           className="font-extrabold text-[4rem]"
           initial={{ opacity: 0 }}
