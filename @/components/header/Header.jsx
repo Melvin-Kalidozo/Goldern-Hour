@@ -13,7 +13,7 @@ export default function Header() {
   };
 
   return (
-    <div className="sticky top-0 z-50 backdrop-blur-md shadow-md">
+    <div className="sticky top-0 z-50 backdrop-blur-md shadow-md py-2 md:p-0">
       <div className="flex justify-between items-center w-[90%] md:w-[80%] m-auto ">
         <Link href="/">
           <div className="relative w-[80px] h-[80px] md:w-[100px] md:h-[100px]">
