@@ -4,9 +4,9 @@ export default function AboutUs() {
   return (
     <div className="w-[97%] md:w-[80%] m-auto space-y-4">
       <h1 className="text-[2rem] font-extrabold">What we offer</h1>
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
+      <div className="flex flex-col md:flex-row items-center  md:justify-between">
         {/* Image Section */}
-        <div className="w-full md:w-[49%] min-h-[400px] mb-4 md:mb-0">
+        <div className="w-full md:w-[49%] h-[400px] mb-4 md:mb-0">
           <img
             src="https://images.pexels.com/photos/10910631/pexels-photo-10910631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="About Us"
@@ -25,13 +25,13 @@ export default function AboutUs() {
           {/* Card Text */}
           <div className="relative z-10">
             <ul className="flex flex-col space-y-8">
-              <li className="font-extrabold text-[2rem] tracking-[.5em]">
+              <li className="font-extrabold text-[1.2rem] md:text-[2rem] tracking-[.5em]">
                 Photography
               </li>
-              <li className="font-extrabold text-[2rem] tracking-[.5em]">
+              <li className="font-extrabold text-[1.2rem] md:text-[2rem] tracking-[.5em]">
                 Videography
               </li>
-              <li className="font-extrabold text-[2rem] tracking-[.5em]">
+              <li className="font-extrabold text-[1.2rem] md:text-[2rem] tracking-[.5em]">
                 Graphic Design
               </li>
             </ul>
