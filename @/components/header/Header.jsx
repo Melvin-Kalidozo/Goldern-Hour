@@ -1,64 +1,82 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { ModeToggle } from "./ModeToogle";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="sticky top-0 z-50   backdrop-blur-md shadow-md">
-      <div className="flex justify-between items-center w-[80%] m-auto">
+    <div className="sticky top-0 z-50 backdrop-blur-md shadow-md">
+      <div className="flex justify-between items-center w-[90%] md:w-[80%] m-auto ">
         <Link href="/">
-          <div className="relative w-[100px] h-[100px]">
+          <div className="relative w-[80px] h-[80px] md:w-[100px] md:h-[100px]">
             <Image
               src="/assets/logoDark.png"
               alt="Golden Hour Logo"
-              fill // Use the `fill` prop to make the image cover the container
-              className="dark:hidden object-contain" // Apply `object-contain` for proper scaling
+              fill
+              className="dark:hidden object-contain"
               priority
             />
             <Image
               src="/assets/logoWhite.png"
               alt="Golden Hour Logo"
-              fill // Use the `fill` prop to make the image contain the container
-              className="hidden dark:block object-contain" // Apply `object-cover` for proper scaling
+              fill
+              className="hidden dark:block object-contain"
               priority
             />
           </div>
         </Link>
 
-        <div className="flex space-x-6">
-          <ul className="flex space-x-4 justify-center items-center font-medium">
-            <li>
-              <Link href="/" className="hover:text-[#FFCC00] transition-colors">
-                Home
-              </Link>
-            </li>
+        <div className="flex items-center space-x-4">
+          <div className="md:hidden">
+            <ModeToggle />
+          </div>
+          <button
+            onClick={toggleMenu}
+            className="md:hidden text-2xl"
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
+          <div
+            className={`md:flex ${isMenuOpen ? "block" : "hidden"} rounded-bl-full absolute md:relative top-full right-0 w-[50%] md:w-auto bg-white bg-opacity-60 backdrop-blur-lg backdrop-filter md:bg-transparent shadow-md md:shadow-none`}
+          >
+            <ul className="flex font-bold text-xl  flex-col items-end md:flex-row space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0">
+              <li>
+                <Link
+                  href="/"
+                  className="block hover:text-[#FFCC00] transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about-us"
+                  className="block hover:text-[#FFCC00] transition-colors"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="block hover:text-[#FFCC00] transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-            <li>
-              <Link
-                href="/about-us"
-                className="hover:text-[#FFCC00] transition-colors"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="hover:text-[#FFCC00] transition-colors"
-              >
-                Contact
-              </Link>
-            </li>
-            {/* <li>
-            <Link href="/" className="hover:text-[#FFCC00] transition-colors">
-              Pricing
-            </Link>
-          </li> */}
-          </ul>
-          <div>
+          <div className="hidden md:block">
             <ModeToggle />
           </div>
         </div>
