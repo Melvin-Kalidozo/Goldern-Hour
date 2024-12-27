@@ -69,7 +69,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="">
+      <div className=" mb-[17%]">
         <Carousel />
       </div>
 

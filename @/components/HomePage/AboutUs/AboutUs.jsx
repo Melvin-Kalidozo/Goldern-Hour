@@ -4,7 +4,7 @@ export default function AboutUs() {
   return (
     <div className="w-[97%] md:w-[80%] m-auto space-y-4">
       <h1 className="text-[2rem] font-extrabold">What we offer</h1>
-      <div className="flex flex-col md:flex-row items-center justify-between">
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
         {/* Image Section */}
         <div className="w-full md:w-[49%] min-h-[400px] mb-4 md:mb-0">
           <img
