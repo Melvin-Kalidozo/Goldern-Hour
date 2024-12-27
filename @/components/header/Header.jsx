@@ -46,7 +46,7 @@ export default function Header() {
             ☰
           </button>
           <div
-            className={`md:flex ${isMenuOpen ? "block" : "hidden"} rounded-bl-full absolute md:relative top-full right-0 w-[50%] md:w-auto bg-white bg-opacity-60 backdrop-blur-lg backdrop-filter md:bg-transparent shadow-md md:shadow-none`}
+            className={`md:flex ${isMenuOpen ? "block" : "hidden"} rounded-bl-full absolute md:relative top-full right-0 w-[50%] md:w-auto bg-white dark:bg-[#18181b] dark:bg-opacity-60 bg-opacity-60 backdrop-blur-lg backdrop-filter md:bg-transparent shadow-md md:shadow-none`}
           >
             <ul className="flex font-bold text-xl  flex-col items-end md:flex-row space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0">
               <li>
