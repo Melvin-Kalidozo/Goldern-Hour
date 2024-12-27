@@ -73,7 +73,7 @@ export default function Home() {
         <Carousel />
       </div>
 
-      <div className="h-[100vh] flex justify-center relative items-center">
+      <div className="min-h-[100vh] flex justify-center relative items-center">
         {/* Ellipse with Soft Edges */}
         <div
           className="absolute w-[300px] h-[250px] md:w-[500px] md:h-[350px] bg-gradient-to-r from-yellow-400 via-amber-400 to-gold-400 opacity-50 rounded-full blur-lg"
