@@ -19,7 +19,9 @@ export default function CarouselSlider() {
   ];
 
   return (
-    <Carousel className="w-[80%] m-auto">
+    <Carousel className="md:w-[80%] w-[98%] m-auto">
+      <p className="md:hidden text-center text-[#FFCC00]">👈 Swipe 👉</p>{" "}
+      {/* Show swipe text on mobile */}
       <CarouselContent className="h-[70vh]">
         {imageUrls.map((url, index) => (
           <CarouselItem key={index}>
@@ -37,8 +39,11 @@ export default function CarouselSlider() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* Show arrows on large screens, hide on mobile */}
+      <div className="hidden md:flex justify-between w-full absolute top-1/2 left-0 right-0 transform -translate-y-1/2">
+        <CarouselPrevious className="text-2xl" />
+        <CarouselNext className="text-2xl" />
+      </div>
     </Carousel>
   );
 }
