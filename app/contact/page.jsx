@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div className="min-h-screen ">
       <ContactUsHeader />
-      <div className="  w-[80%] m-auto">
+      <div className=" w-[97%] md:w-[80%] m-auto">
         <HoverDevCards />
       </div>
     </div>
