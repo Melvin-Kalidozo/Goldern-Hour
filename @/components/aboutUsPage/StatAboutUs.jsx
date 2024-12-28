@@ -35,10 +35,11 @@ export default function StatAboutUs() {
   }, []);
 
   return (
-    <div className="w-[40%] m-auto flex justify-between">
+    <div className="w-[90%] md:w-[80%] lg:w-[60%] m-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-6">
+      {/* Counter 1 */}
       <div className="flex flex-col justify-center items-center p-3">
         <motion.h1
-          className="font-extrabold text-[4rem]"
+          className="font-extrabold text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -52,11 +53,13 @@ export default function StatAboutUs() {
             {count1}+
           </motion.div>
         </motion.h1>
-        <p>Portraits</p>
+        <p className="text-base sm:text-lg md:text-xl">Portraits</p>
       </div>
+
+      {/* Counter 2 */}
       <div className="flex flex-col justify-center items-center p-3">
         <motion.h1
-          className="font-extrabold text-[4rem]"
+          className="font-extrabold text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -70,11 +73,13 @@ export default function StatAboutUs() {
             {count2}+
           </motion.div>
         </motion.h1>
-        <p>Portraits</p>
+        <p className="text-base sm:text-lg md:text-xl">Portraits</p>
       </div>
+
+      {/* Counter 3 */}
       <div className="flex flex-col justify-center items-center p-3">
         <motion.h1
-          className="font-extrabold text-[4rem]"
+          className="font-extrabold text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -88,7 +93,7 @@ export default function StatAboutUs() {
             {count3}+
           </motion.div>
         </motion.h1>
-        <p>Portraits</p>
+        <p className="text-base sm:text-lg md:text-xl">Portraits</p>
       </div>
     </div>
   );

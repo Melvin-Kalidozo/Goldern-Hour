@@ -114,13 +114,13 @@ export default function AboutUs() {
   return (
     <div className="space-y-8">
       <AboutUsHeader />
-      <div className="flex justify-between w-[80%] m-auto">
+      <div className="flex space-y-3 md:space-x-0 flex-col md:flex-row md:justify-between w-[97%] md:w-[80%] m-auto">
         {/* Shuffle Grid */}
-        <div className="w-[45%]">
+        <div className="md:w-[45%]">
           <ShuffleGrid />
         </div>
         {/* About Us Content */}
-        <div className="w-[50%] flex justify-center items-center">
+        <div className="md:w-[50%]  flex justify-center items-center">
           <div>
             <h1 className="text-[2.5rem] font-extrabold mb-4">
               We Offer Media Solutions
