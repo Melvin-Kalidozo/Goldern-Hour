@@ -72,7 +72,7 @@ export default function Header() {
           <AnimatePresence>
             {isMenuOpen && (
               <motion.div
-                className="fixed inset-0 z-50 bg-white dark:bg-[#18181b] h-screen text-black dark:text-white flex flex-col items-center justify-start p-6"
+                className="fixed inset-0 z-50 bg-white dark:bg-[#18181b] left-0 h-[50vh] text-black dark:text-white flex flex-col items-center justify-start p-6"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
